@@ -1,0 +1,97 @@
+/* Reference : OOP Tutorial Address App */
+
+.background {
+    -fx-background-color: #ece5b6;
+}
+
+.table-view {
+    -fx-base: #127cb5;
+    -fx-control-inner-background: #c1eaf6;
+    /* -fx-background-color: #d98181; */
+    -fx-table-cell-border-color: #000000;
+    -fx-table-header-border-color: #000000;
+    -fx-padding: 5;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #127cb5;
+}
+
+
+.table-view .column-header .label {
+    -fx-font-size: 15pt;
+    -fx-font-family: "Copper Black";
+    -fx-text-fill: rgb(255, 255, 255);
+    -fx-alignment: center;
+    -fx-opacity: 1;
+}
+
+.table-row-cell {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Copper Black";
+    -fx-text-fill: black;
+    -fx-alignment: center;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: rgb(204, 135, 6);
+}
+
+.split-pane:vertical > .split-pane-divider {
+    -fx-border-color: transparent #ece5b6 transparent #ece5b6;
+    -fx-background-color: transparent, derive(#ece5b6,20%);
+}
+
+.menu-bar {
+    -fx-background-color: derive(#050156,20%);
+}
+
+.context-menu {
+    -fx-background-color: derive(#239bfd,50%);
+}
+
+.menu-bar .label {
+    -fx-font-size: 14pt;
+    -fx-font-family: "Copper Black";
+    -fx-text-fill: white;
+    -fx-opacity: 0.9;
+}
+
+.button {
+    -fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 50;
+    -fx-background-color: orange;
+    -fx-font-family: "Copper Black";
+    -fx-font-size: 14pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: #3c3939;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button:hover {
+    -fx-background-color: #faba89;
+}
+
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: rgb(236, 206, 157);
+  -fx-text-fill: #1d1d1d;
+}
+
+.button:focused {
+    -fx-border-color: white, white;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 1);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+
+.dialog-pane {
+    -fx-background-color: #cbbfa7;
+}
+
+.dialog-pane:header .header-panel {
+    -fx-background-color: #cbbfa7;
+}
